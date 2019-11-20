@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB2C2B31237EA9050029B407 /* SwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2C2B30237EA9050029B407 /* SwiftController.swift */; };
 		AB61B9A6236C21AE00F62F41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61B9A5236C21AE00F62F41 /* AppDelegate.m */; };
 		AB61B9A9236C21AE00F62F41 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61B9A8236C21AE00F62F41 /* SceneDelegate.m */; };
 		AB61B9AC236C21AE00F62F41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61B9AB236C21AE00F62F41 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB2C2B2F237EA9040029B407 /* 多线程-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "多线程-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB2C2B30237EA9050029B407 /* SwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftController.swift; sourceTree = "<group>"; };
 		AB61B9A1236C21AE00F62F41 /* 多线程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "多线程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB61B9A4236C21AE00F62F41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB61B9A5236C21AE00F62F41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				AB61B9B2236C21B000F62F41 /* LaunchScreen.storyboard */,
 				AB61B9B5236C21B000F62F41 /* Info.plist */,
 				AB61B9B6236C21B000F62F41 /* main.m */,
+				AB2C2B30237EA9050029B407 /* SwiftController.swift */,
+				AB2C2B2F237EA9040029B407 /* 多线程-Bridging-Header.h */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				TargetAttributes = {
 					AB61B9A0236C21AE00F62F41 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					AB61B9BB236C21B100F62F41 = {
 						CreatedOnToolsVersion = 11.1;
@@ -269,6 +275,7 @@
 			files = (
 				AB61B9AC236C21AE00F62F41 /* ViewController.m in Sources */,
 				AB61B9A6236C21AE00F62F41 /* AppDelegate.m in Sources */,
+				AB2C2B31237EA9050029B407 /* SwiftController.swift in Sources */,
 				AB61B9B7236C21B000F62F41 /* main.m in Sources */,
 				AB61B9A9236C21AE00F62F41 /* SceneDelegate.m in Sources */,
 			);
@@ -439,7 +446,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QH73V7GAM6;
 				INFOPLIST_FILE = "多线程/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,6 +457,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "多线程/多线程-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -456,7 +468,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QH73V7GAM6;
 				INFOPLIST_FILE = "多线程/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +479,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "多线程/多线程-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -472,6 +488,7 @@
 		AB61B9D4236C21B100F62F41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH73V7GAM6;
@@ -492,6 +509,7 @@
 		AB61B9D5236C21B100F62F41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH73V7GAM6;
@@ -512,6 +530,7 @@
 		AB61B9D7236C21B100F62F41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH73V7GAM6;
 				INFOPLIST_FILE = "多线程UITests/Info.plist";
@@ -530,6 +549,7 @@
 		AB61B9D8236C21B100F62F41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH73V7GAM6;
 				INFOPLIST_FILE = "多线程UITests/Info.plist";
